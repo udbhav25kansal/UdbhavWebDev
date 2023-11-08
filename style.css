@@ -142,7 +142,7 @@ body {
 }
 
 #page2 {
-    min-height: 100vh;
+    min-height: 70vh;
     width: 100%;
     position: relative;
     display: flex;
@@ -154,19 +154,24 @@ body {
 #page2 .elem {
     height: 100%;
     width: 31%;
-    /* background-color: red; */
-    overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 30vh;
+    
 }
 
 #page2 .elem img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    scale: 1.1;
+    height:auto;
+    width: 30%;
+    transition: all .2s ease-in-out;
+}
+
+#page2 .elem img:hover {
+    height:auto;
+    width: 50%;
+    transform: scale(1.1);
 }
 
 #page2 .elem .dets {
@@ -189,6 +194,33 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+#techStack{
+    position: absolute;
+    top: 15vh;
+    font-size: 4vw;
+    float: right;
+    z-index: 1;
+    
+}
+
+#techStack h1{
+    font-family: "Futura";
+
+}
+
+.displayImage{
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 3%;
+}
+
+.displayImage:hover{
+    color: #111;  
+    background: rgb(14, 14, 13);  
+    box-shadow: 0 0 50px rgb(14, 14, 13);  
+}
+
 
 .child {
     height: 54vh;
@@ -329,6 +361,11 @@ body {
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+
+    #etavP4Q1cbA1{
+        position: absolute;
+        margin-left: 1000px;
     }
 
     .child {
